@@ -2,6 +2,18 @@
 
 # 本项目初衷是想学习CI/CD以及容器的使用,仅供学习使用，请勿用作其他非法用途，后果自负
 
+最新代码
+wget --no-check-certificate -O ibmcloud.sh https://raw.githubusercontent.com/dos565689/NEW-IBMYes3/master/ibmcloud.sh && 
+
+chmod +x ibmcloud.sh  && ./ibmcloud.sh
+
+
+另外一个大佬提供的脚本
+
+wget --no-check-certificate -O install2.sh https://raw.githubusercontent.com/dos565689/NEW-IBMYes3/master/install2.sh && 
+
+chmod +x install2.sh  && ./install2.sh
+
 本项目由CCCieh大佬的项目改进而来，加入部分易踩 坑点提醒，修改了原脚本中的若干bug。因此图片都源自于原项目。
 
 本项目包括3部分
