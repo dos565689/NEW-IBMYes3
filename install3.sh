@@ -13,20 +13,20 @@ create_mainfest_file(){
     echo "进行配置。。。"
     read -p "请输入你的应用名称：" IBM_APP_NAME
     echo "应用名称：${IBM_APP_NAME}"
-    read -p "请输入你的应用内存大小(默认256)：" IBM_MEM_SIZE
-    if [ -z "${IBM_MEM_SIZE}" ];then
+   # read -p "请输入你的应用内存大小(默认256)：" IBM_MEM_SIZE
+   # if [ -z "${IBM_MEM_SIZE}" ];then
     IBM_MEM_SIZE=256
-    fi
+   # fi
     echo "内存大小：${IBM_MEM_SIZE}"
-    read -p "指定UUID(不指定將隨機生成)：" UUID 
-    if [ -z "${UUID}" ];then
+   # read -p "指定UUID(不指定將隨機生成)：" UUID 
+   # if [ -z "${UUID}" ];then
     UUID=$(cat /proc/sys/kernel/random/uuid)
-    fi
+   # fi
     echo "UUID：${UUID}"
-    read -p "指定WebSocket路徑(不指定將隨機生成)：" WSPATH
-    if [ -z "${WSPATH}" ];then
+   # read -p "指定WebSocket路徑(不指定將隨機生成)：" WSPATH
+   # if [ -z "${WSPATH}" ];then
     WSPATH=$(head /dev/urandom | tr -dc A-Za-z0-9 | head -c 16)
-    fi
+   # fi
     echo "WebSocket路径：${WSPATH}"
     
     cat >  ${SH_PATH}/IBM-cloudfoundry-continue/cloudfoundry/manifest.yml  << EOF
