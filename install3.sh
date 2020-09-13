@@ -127,7 +127,7 @@ clone_repo(){
 install(){
     echo "进行安装。。。"
     cd ${SH_PATH}/IBM-cloudfoundry-continue/cloudfoundry
-    /bin/python -m pip install --upgrade pip
+    python -m pip install --upgrade pip
     ibmcloud target --cf
     echo "N"|ibmcloud cf install
     ibmcloud cf push
