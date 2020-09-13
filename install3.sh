@@ -18,7 +18,7 @@ create_mainfest_file(){
    # read -p "请输入你的应用内存大小(默认256)：" IBM_MEM_SIZE
    # if [ -z "${IBM_MEM_SIZE}" ];then
    IBM_APP_NAME=dos790
-   IBM_MEM_SIZE=128
+   IBM_MEM_SIZE=256
    # fi
     echo "内存大小：${IBM_MEM_SIZE}"
    # read -p "指定UUID(不指定將隨機生成)：" UUID 
