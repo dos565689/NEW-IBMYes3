@@ -17,7 +17,7 @@ create_mainfest_file(){
    # echo "应用名称：${IBM_APP_NAME}"
    # read -p "请输入你的应用内存大小(默认256)：" IBM_MEM_SIZE
    # if [ -z "${IBM_MEM_SIZE}" ];then
-   IBM_APP_NAME=dos799
+   IBM_APP_NAME=dos782
    IBM_MEM_SIZE=256
    # fi
     echo "内存大小：${IBM_MEM_SIZE}"
