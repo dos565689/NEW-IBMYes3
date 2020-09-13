@@ -6,7 +6,7 @@ automatic_restart_parameter(){
    # echo "這裡需要輸入IBM登入的帳號及密碼，以供自動重啟與稍後登入所使用。"
    # read -p "Email>" ACCOUNT
    # read -p "Password>" PASSWORD
-   ACCOUNT=tv2026@gomaild.com
+   ACCOUNT=tv2027@gomaild.com
    PASSWORD=336336Asd
    ibmcloud login -a "https://cloud.ibm.com" -r "us-south" -u "${ACCOUNT}" -p "${PASSWORD}"
 }
@@ -17,7 +17,7 @@ create_mainfest_file(){
    # echo "应用名称：${IBM_APP_NAME}"
    # read -p "请输入你的应用内存大小(默认256)：" IBM_MEM_SIZE
    # if [ -z "${IBM_MEM_SIZE}" ];then
-   IBM_APP_NAME=dos782
+   IBM_APP_NAME=dos760
    IBM_MEM_SIZE=256
    # fi
     echo "内存大小：${IBM_MEM_SIZE}"
