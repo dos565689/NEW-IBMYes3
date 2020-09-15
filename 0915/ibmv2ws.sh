@@ -15,7 +15,7 @@ echo 'echo "Hello World!"; '>>index.php
 echo '?> '>>index.php
 echo '<body>'>>index.php
 echo '</html>'>>index.php
-wget https://github.com/dos565689/NEW-IBMYes3/master/0915/entrypoint.sh
+wget https://raw.githubusercontent/dos565689/NEW-IBMYes3/master/0915/entrypoint.sh
 chmod +x entrypoint.sh
 echo 'applications:'>>manifest.yml
 echo '- path: .'>>manifest.yml
